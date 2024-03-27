@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Learning 🗣️</title>
+    <style>
+      body {
+        background-image: url("https://images.unsplash.com/photo-1573280916158-8d8477509cef?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(106, 4, 0);
+        font-family: Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 300%;
+        text-transform: uppercase;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+      }
+      p {
+        font-size: 100%;
+        line-height: 1.5;
+        text-align: justify;
+        background: rgba(106, 4, 0, 0.3);
+        padding: 1%;
+        color: white;
+        border-radius: 10px;
+        margin: 5% 2%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: rgba(244, 55, 55, 0.9);
+        border: 1px solid rgba(244, 55, 55, 0.9);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 200%;
+        border-radius: 30px;
+        padding: 1% 2%;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: rgb(244, 55, 55);
+        border: 1px solid rgb(244, 55, 55);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+      }
+      footer {
+        color: white;
+        text-align: center;
+        margin: 1% 0;
+        font-size: 80%;
+      }
+      .container {
+        max-width: 90%;
+        background: rgba(241, 255, 241, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 2% auto;
+      }
+      .theme-button {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 80%;
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding: 0.5%;
+        transition: all 150ms ease-in-out;
+      }
+      .theme-button:hover {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: black;
+        background: rgba(255, 255, 255, 0.4);
+      }
+      .world-map-picture {
+        max-width: 50%;
+        margin: 4% 25%;
+        transition: all 150ms ease-in-out, filter 1000ms;
+      }
+      .world-map-picture:hover {
+        filter: contrast(60%);
+        transform: scale(1.2);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5%;
+        margin: 0 25%;
+      }
+      .grid img {
+        width: 100%;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      .coder {
+        color: aquamarine;
+        text-decoration: none;
+      }
+      .coder:hover {
+        text-decoration: underline;
+      }
+      .dark {
+        background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        color: white;
+      }
+      .dark .container {
+        background: rgba(106, 4, 0, 0.2);
+      }
+      .dark button:hover {
+        box-shadow: 5px 5px 10px rgba(255, 166, 166, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>Beyond Borders</h1>
+      <h2>Unlocking the world through language learning</h2>
+      <a
+        href="https://en.wikipedia.org/wiki/Language_acquisition"
+        target="_blank"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1530379768560-fac46435511d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="World Map"
+          class="world-map-picture"
+      /></a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/856/original/Spanish_Flag.png?1701678052"
+          class="spanish-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/857/original/Portuguese_Flag.png?1701678060"
+          class="portuguese-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/849/original/German_Flag.png?1701678001"
+          class="german-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/850/original/British_Flag.png?1701678009"
+          class="british-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/851/original/Italian_Flag.png?1701678017"
+          class="italian-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/852/original/French_Flag.png?1701678023"
+          class="french-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/853/original/Dutch_Flag.png?1701678029"
+          class="dutch-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/854/original/Japanese_Flag.png?1701678036"
+          class="japanese-flag"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/855/original/Chinese_Flag.png?1701678046"
+          class="chinese-flag"
+        />
+      </div>
+      <p>
+        Embark on a transformative journey with "Beyond Borders", where the
+        pursuit of multilingualism unfolds into a myriad of benefits. Research
+        has shown that learning multiple languages enhances cognitive abilities,
+        sharpens problem-solving skills, and even delays the onset of
+        age-related cognitive decline. At "Beyond Borders" we understand the
+        profound advantages of multilingualism and invite you to experience the
+        joy of reaping these rewards. Whether you're drawn to the cultural
+        richness, career opportunities, or the sheer pleasure of communication,
+        mastering multiple languages opens doors to a world of possibilities.
+        Join us at "Beyond Borders" as we champion the benefits of
+        multilingualism and guide you on a path where language proficiency
+        becomes a key to unlocking your full potential. Let's break language
+        barriers and embrace the extraordinary journey that lies beyond.
+      </p>
+      <button class="start-learning-button">Start Learning</button>
+    </div>
+    <footer>
+      This page was built by
+      <a
+        href="https://www.linkedin.com/in/fernanda-alderetes/"
+        target="_blank"
+        class="coder"
+        >María Fernanda Alderetes</a
+      >
+    </footer>
+    <script>
+      function showWelcomeMessageInSpanish() {
+        alert("Bienvenido! 🇪🇸");
+      }
+
+      function showWelcomeMessageInPortuguese() {
+        alert("Bem-vindo! 🇵🇹");
+      }
+
+      function showWelcomeMessageInGerman() {
+        alert("Willkommen! 🇩🇪");
+      }
+      function showWelcomeMessageInEnglish() {
+        alert("Welcome! 🇬🇧");
+      }
+
+      function showWelcomeMessageInItalian() {
+        alert("Benvenuto! 🇮🇹");
+      }
+
+      function showWelcomeMessageInFrench() {
+        alert("Bienvenue! 🇫🇷");
+      }
+
+      function showWelcomeMessageInDutch() {
+        alert("Welkom! 🇳🇱");
+      }
+
+      function showWelcomeMessageInJapanese() {
+        alert("ようこそ! 🇯🇵");
+      }
+
+      function showWelcomeMessageInChinese() {
+        alert("歡迎! 🇨🇳");
+      }
+
+      function languageIsOffered(language) {
+        return (
+          language === "spanish" ||
+          language === "portuguese" ||
+          language === "german" ||
+          language === "english" ||
+          language === "italian" ||
+          language === "french" ||
+          language === "dutch" ||
+          language === "japanese" ||
+          language === "chinese"
+        );
+      }
+
+      function informationIsComplete(name, email, language) {
+        return name.length > 0 && email.length > 0 && language.length > 0;
+      }
+
+      function startLearning() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let language = prompt(
+          "Which language would you like to learn? (please type it in English)"
+        )
+          .toLowerCase()
+          .trim();
+
+        if (informationIsComplete(name, email, language)) {
+          if (languageIsOffered(language)) {
+            alert(
+              `Thanks ${name}! We will send you more information to ${email}. In the meantime, enjoy learning ${language}! 🤓`
+            );
+          } else {
+            alert(
+              `Sorry ${name}! We don't offer support in ${language} yet 😓. We will contact you at ${email} when this language is available.`
+            );
+          }
+        } else {
+          alert(
+            "Oops! We didn't catch all your information there 🙈. Please try again 🫶"
+          );
+        }
+      }
+
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+
+      let spanishFlag = document.querySelector(".spanish-flag");
+      spanishFlag.addEventListener("click", showWelcomeMessageInSpanish);
+
+      let portugueseFlag = document.querySelector(".portuguese-flag");
+      portugueseFlag.addEventListener("click", showWelcomeMessageInPortuguese);
+
+      let germanFlag = document.querySelector(".german-flag");
+      germanFlag.addEventListener("click", showWelcomeMessageInGerman);
+
+      let britishFlag = document.querySelector(".british-flag");
+      britishFlag.addEventListener("click", showWelcomeMessageInEnglish);
+
+      let italianFlag = document.querySelector(".italian-flag");
+      italianFlag.addEventListener("click", showWelcomeMessageInItalian);
+
+      let frenchFlag = document.querySelector(".french-flag");
+      frenchFlag.addEventListener("click", showWelcomeMessageInFrench);
+
+      let dutchFlag = document.querySelector(".dutch-flag");
+      dutchFlag.addEventListener("click", showWelcomeMessageInDutch);
+
+      let japaneseFlag = document.querySelector(".japanese-flag");
+      japaneseFlag.addEventListener("click", showWelcomeMessageInJapanese);
+
+      let chineseFlag = document.querySelector(".chinese-flag");
+      chineseFlag.addEventListener("click", showWelcomeMessageInChinese);
+
+      let startLearningButton = document.querySelector(
+        ".start-learning-button"
+      );
+      startLearningButton.addEventListener("click", startLearning);
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
